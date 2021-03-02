@@ -1,0 +1,17 @@
+{
+  "name": "nugu-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "zip": "repack-zip . ../nugu_coffee_api.zip"
+  },
+  "author": "",
+  "license": "CC0 1.0 Universal",
+  "dependencies": {
+    "@aws-sdk/client-iot-data-plane": "^3.7.0"
+  },
+  "devDependencies": {
+    "repack-zip": "^0.2.8"
+  }
+}
