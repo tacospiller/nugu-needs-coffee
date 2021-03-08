@@ -5,7 +5,7 @@ exports.handler = async (event) => {
     console.log(JSON.stringify(event));
     
     var responseBody = "OK";
-    if (event.routeKey === "POST /TriggerCoffeeMaker") {
+    if (event.routeKey.startsWith("POST /TriggerCoffeeMaker")) {
         responseBody = await makeCoffee(event);
     } else if (event.routeKey === "GET /health") {
         responseBody = health();
